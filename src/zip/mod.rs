@@ -865,6 +865,14 @@ offset_impl! {
     [A B C D][ a b c d],
     [A B C D E][ a b c d e],
     [A B C D E F][ a b c d e f],
+    [A B C D E F G][ a b c d e f g],
+    [A B C D E F G H][ a b c d e f g h],
+    [A B C D E F G H I][ a b c d e f g h i],
+    [A B C D E F G H I J][ a b c d e f g h i j],
+    [A B C D E F G H I J K][ a b c d e f g h i j k],
+    [A B C D E F G H I J K L][ a b c d e f g h i j k l],
+    [A B C D E F G H I J K L M][ a b c d e f g h i j k l m],
+    [A B C D E F G H I J K L M N][ a b c d e f g h i j k l m n],
 }
 
 macro_rules! zipt_impl {
@@ -924,6 +932,14 @@ zipt_impl! {
     [A B C D][ a b c d],
     [A B C D E][ a b c d e],
     [A B C D E F][ a b c d e f],
+    [A B C D E F G][ a b c d e f g],
+    [A B C D E F G H][ a b c d e f g h],
+    [A B C D E F G H I][ a b c d e f g h i],
+    [A B C D E F G H I J][ a b c d e f g h i j],
+    [A B C D E F G H I J K][ a b c d e f g h i j k],
+    [A B C D E F G H I J K L][ a b c d e f g h i j k l],
+    [A B C D E F G H I J K L M][ a b c d e f g h i j k l m],
+    [A B C D E F G H I J K L M N][ a b c d e f g h i j k l m n],
 }
 
 macro_rules! map_impl {
@@ -1201,12 +1217,20 @@ macro_rules! map_impl {
 }
 
 map_impl! {
-    [true P1],
-    [true P1 P2],
-    [true P1 P2 P3],
-    [true P1 P2 P3 P4],
-    [true P1 P2 P3 P4 P5],
-    [false P1 P2 P3 P4 P5 P6],
+    [true  P1],
+    [true  P1 P2],
+    [true  P1 P2 P3],
+    [true  P1 P2 P3 P4],
+    [true  P1 P2 P3 P4 P5],
+    [true  P1 P2 P3 P4 P5 P6],
+    [true  P1 P2 P3 P4 P5 P6 P7],
+    [true  P1 P2 P3 P4 P5 P6 P7 P8],
+    [true  P1 P2 P3 P4 P5 P6 P7 P8 P9],
+    [true  P1 P2 P3 P4 P5 P6 P7 P8 P9 P10],
+    [true  P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 P11],
+    [true  P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 P11 P12],
+    [true  P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 P11 P12 P13],
+    [false P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 P11 P12 P13 P14],
 }
 
 /// Value controlling the execution of `.fold_while` on `Zip`.
