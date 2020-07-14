@@ -144,10 +144,18 @@ macro_rules! zip_impl {
 }
 
 zip_impl! {
-    [true P1],
-    [true P1 P2],
-    [true P1 P2 P3],
-    [true P1 P2 P3 P4],
-    [true P1 P2 P3 P4 P5],
-    [false P1 P2 P3 P4 P5 P6],
+    [true  P1],
+    [true  P1 P2],
+    [true  P1 P2 P3],
+    [true  P1 P2 P3 P4],
+    [true  P1 P2 P3 P4 P5],
+    [true  P1 P2 P3 P4 P5 P6],
+    [true  P1 P2 P3 P4 P5 P6 P7],
+    [true  P1 P2 P3 P4 P5 P6 P7 P8],
+    [true  P1 P2 P3 P4 P5 P6 P7 P8 P9],
+    [true  P1 P2 P3 P4 P5 P6 P7 P8 P9 P10],
+    [true  P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 P11],
+    [true  P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 P11 P12],
+    [true  P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 P11 P12 P13],
+    [false P1 P2 P3 P4 P5 P6 P7 P8 P9 P10 P11 P12 P13 P14],
 }
